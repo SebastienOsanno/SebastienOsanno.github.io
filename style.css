@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9fbfc;
+    font-size: 62,5% * 16px;
+    font-family: 'Fira Mono', monospace;;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3% 7%;
+}
+
+.contact {
+    color: black;
+    border: 3px solid #e1755e;
+    border-radius: 0% 40%;
+    font-size: 1.4rem;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.contact:hover {
+    background-color: #e1755e;
+    color: #f9fbfc;
+}
+
+/* introduction division*/
+.introduction {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3% 7%;
+    text-align: center;
+}
+
+.introduction__subtitle {
+    font-family: inherit;
+    font-weight: 300;
+}
+
+.seb_picture {
+    border-radius: 50%;
+    width: 15%;
+
+}
+
+/* skills divisions */
+
+.skills {
+    align-items: center;
+    background-color: #203961 ;
+    color: #f9fbfc;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    text-align: center;
+    padding: 5%;
+}
+
+.skills__detail {
+    background-color: #f9fbfc;
+    border: 2px solid rgba(32, 57, 97, 0.5);
+    border-radius: 15px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 2% 5%;
+    max-height: 750px;
+    position: relative;
+    top: -150px;
+    width: 80%;
+}
+
+.skills__title {
+    padding: 4% 0%;
+}
+
+.skills__colomn{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    text-align: center;
+    width: 33%;
+}
+
+.skills__colomn ul {
+    padding-inline: 0px;
+}
+
+.skills__icone {
+    background-color: #e1755e;
+    border: 10px solid #e1755e;
+    border-radius: 22%;
+    height: 10%;
+    text-align: center;
+    width: 20%%;
+}
+
+.skills__intro {
+    text-align: center;
+}
+
+.back {
+    border-left: 1px solid #203961;
+    border-right: 1px solid #203961;
+}
+
+li {
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+h4 {
+    color: #e1755e;
+}
+
+/* projects divisions */
+
+.myProject {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 3% 0% 3%;
+    position: relative;
+    text-align: center;
+    top: -100px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.style {
+    
+}
+
+.paysage { 
+}
+
+.style__hidden {
+    align-items: center;
+    background-color: #203961;
+    color: #f9fbfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    padding: 3%;
+    position: relative;
+    text-align: center;
+    top: -203px;
+    visibility:hidden;
+    width: 300px;
+}
+
+.style__hidden2 {
+    align-items: center;
+    background-color: #203961;
+    color: #f9fbfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    padding: 3%;
+    position: relative;
+    text-align: center;
+    top: -203px;
+    visibility:hidden;
+    width: 300px;
+}
+
+.link__website {
+    color:#f9fbfc;
+    border: 3px solid #e1755e;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.link__website:hover {
+    background-color: #e1755e;
+    color: #f9fbfc;
+}
+
+.paragraph__website {
+    font-size: 0.8rem;
+}
+
+.style__img {
+    height: 200px;
+    width: 300px;
+}
+
+.fade-in-out {
+    transition: visibility 0.6s, opacity 0.6s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+.fade-in-out2 {
+    transition: visibility 0.6s, opacity 0.6s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+/* School project div */
+
+.school__projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0% 7%;
+    position: relative;
+    top: -200px;
+    text-align: center;
+}
+
+
+/* Carousel */
+
+.carousel-container {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 3% 7%;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%; /* Ajustez la largeur des éléments selon vos besoins */
+    margin-right: 10px; /* Espacement entre les éléments */
+    padding: 10px; /* Espacement interne des éléments */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev-button {
+    left: 0;
+  }
+  
+  .next-button {
+    right: 0;
+  }
+
+  /* Hobbies */
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0% 7%;
+}
+ 
+.Experience {
+    background-color: #f9fbfc;
+    border: 2px solid rgba(32, 57, 97, 0.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    margin: 2rem;
+    top: -100px;
+    width: 25%;
+}
+
+.Experience img {
+    width: 100%;
+    height: auto;
+}
+
+/*contact section*/
+
+.contact__section {
+    background-color: #f9fbfc;
+    border: 2px solid rgba(32, 57, 97, 0.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    margin: 2rem;
+    top: 80px;
+    width: 70%;
+}
+
+.contact2 {
+    color: black;
+    border: 3px solid #e1755e;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.contact2:hover {
+    background-color: #e1755e;
+    color: #f9fbfc;
+}
+
+
+/*footer*/
+
+.footer {
+    align-items: center;
+    background-color: #203961;
+    color: #f9fbfc;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer p {
+    margin-top: 100px;
+}
+
+.website {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.website a img {
+    width: 50px;
+    height: 50px;
+    margin: 1rem;
+}
