@@ -10,6 +10,45 @@
     <title>Sebastien Osanno's portfolio</title>
 </head>
 <body>
-    <h1>HELLO</h1>
+    <header class="header topline">
+        <a href="index.hmtl"><img class="logo" src="./image/SO logo-01.png" alt="Logo seb web site"></a>
+        <a class="contact" href="index.html">Previous page</a>
+    </header>
+    <main>
+    <img class="seb_picture contact__image" src="./image/myAvatar.png" alt="picture of the owner">
+    <h1>I’m excited to learn about you. </h1>
+    <p>Ready to get started?</p>
+    <form action="https://formspree.io/f/xjvqaqkq" method="post">
+        
+        <div class="form__input">
+            <label for="nom">Name:</label> <br>
+            <input type="text" name="nom" id="nom" required><br>    
+        </div>
+        <div class="form__input">
+            <label for="email">email address:</label> <br>
+            <input type="email" name="email" id="email" required><br>    
+        </div>
+        <div class="form__input">
+            <label for="telephone">Phone number:</label> <br>
+            <input type="tel" name="telephone" id="telephone"><br>    
+        </div>
+        <div class="form__input">
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="message" rows="5" required></textarea><br>    
+        </div>
+        <button class="submit__button">Submit</button>
+    </form>
+</main>
+<footer>
+    <div class="footer"> 
+         <p>@2023</p>
+         <div class="website">
+            <a href="https://www.linkedin.com/in/sebastien-osanno/"><img src="./image/linkedin.png" alt="linkedin link"></a>
+            <a href="https://github.com/SebastienOsanno"><img src="./image/github.png" alt="github link"></a>
+            <a href="./image/Resume.pdf" download="Resume.pdf"><img src="./image/resume-icon-397x512-doqhpuo9.png" alt="my resume"></a>
+         </div>   
+    </div>
+</footer>
+<script src="./interaction.js"></script>
 </body>
 </html>
