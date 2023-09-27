@@ -245,6 +245,7 @@ h4 {
     position: relative;
     top: -200px;
     text-align: center;
+    width: 100%;
 }
 
 
@@ -453,6 +454,10 @@ input {
     text-align: center;
 }
 
+.form__subtitle {
+    text-align: center;
+}
+
 /* Responsive changes */
 
 @media (max-width: 900px) {
@@ -495,7 +500,7 @@ input {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 530px) {
     .Experience {
         width: 80%;
     }
@@ -514,6 +519,14 @@ input {
     .logo__contact {
         width: 50%;
     }
+    .prev-button {
+        top: 30%;
+    }
+    .skills__detail {
+        max-height: 770px;
+        top: -126px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -521,7 +534,7 @@ input {
         padding: 0 1rem;
     }
     .skills__icone {
-        width: 11%;
+        width: 15%;
         height: 7%;
     }
     .skills__intro {
@@ -548,6 +561,9 @@ input {
     }
     .logo__contact {
         width: 60%;
+    }
+    .prev-button {
+        top: 15%;
     }
     
     
